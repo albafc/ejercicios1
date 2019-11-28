@@ -28,8 +28,26 @@ public class EjerciciosBasicosJava {
         }
         return 2; //el resto de casos, que voy a mas de 80
     }
+      public boolean multiplosOnce(int numero){
+          if (numero % 11 == 0 || (numero-1) % 11 == 0){
+              return true;
+          }
+          return false;
+      }
 
-
+      public boolean contesta(boolean matinal, boolean madre, boolean dormido){
+          if (dormido){
+              return false;
+          }
+          else if (matinal && !madre){
+              return false;
+          }
+          else{
+          return true;
+         }
+      }
+      
+      
     /**
      * @param args the command line arguments
      */
@@ -42,6 +60,10 @@ public class EjerciciosBasicosJava {
         System.out.println(ejercicios.multa(60, false));
         System.out.println(ejercicios.multa(65, false));
         System.out.println(ejercicios.multa(90, false));
+        ejercicios.multiplosOnce(100);
+        System.out.println(ejercicios.multiplosOnce(100));
+        System.out.println(ejercicios.contesta(true, true, true));
+        
     }
 
 }

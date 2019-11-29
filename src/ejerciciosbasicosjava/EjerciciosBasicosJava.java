@@ -58,7 +58,14 @@ public class EjerciciosBasicosJava {
           return false;
       }
       public boolean digitoIgual (int a, int b){
-          if ()
+        int aIzq = a/ 10;
+        int aDer = a% 10;
+        int bIzq = b/ 10;
+        int bDer = b% 10;
+        if (aIzq == bIzq || aIzq == bDer || aDer == bIzq || aDer == bDer){
+            return true;
+        }
+        return false;
       }
     /**
      * @param args the command line arguments

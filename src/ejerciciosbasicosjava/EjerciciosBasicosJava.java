@@ -33,6 +33,8 @@ public class EjerciciosBasicosJava {
               return true;
           }
           return false;
+          // otra posible solucion mas corta
+          //return (numero % 11 == 0 || numero % 11 == 1);
       }
 
       public boolean contesta(boolean matinal, boolean madre, boolean dormido){
@@ -46,8 +48,18 @@ public class EjerciciosBasicosJava {
           return true;
          }
       }
-      
-      
+      public boolean menorPor (int a, int b, int c){
+          if(a-b==10 || b-c==10 || c-a==10){
+            return true;  
+          }
+          else if(b-a==10 || c-b==10 || a-c==10 ){
+              return true;
+          }
+          return false;
+      }
+      public boolean digitoIgual (int a, int b){
+          if ()
+      }
     /**
      * @param args the command line arguments
      */
@@ -63,6 +75,9 @@ public class EjerciciosBasicosJava {
         ejercicios.multiplosOnce(100);
         System.out.println(ejercicios.multiplosOnce(100));
         System.out.println(ejercicios.contesta(true, true, true));
+        System.out.println(ejercicios.menorPor(1, 7, 11));
+        System.out.println(ejercicios.menorPor(1, 7, 10));
+        System.out.println(ejercicios.menorPor(11, 7, 1));
         
     }
 

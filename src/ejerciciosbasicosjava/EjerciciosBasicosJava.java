@@ -16,6 +16,7 @@ public class EjerciciosBasicosJava {
         }
     }
     
+    
       public int multa(int velocidad, boolean birthday) {
         if (birthday) { //si es mi cumple el guardia me quita 5 de velocidad
             velocidad -= 5;
@@ -85,6 +86,7 @@ public class EjerciciosBasicosJava {
         System.out.println(ejercicios.menorPor(1, 7, 11));
         System.out.println(ejercicios.menorPor(1, 7, 10));
         System.out.println(ejercicios.menorPor(11, 7, 1));
+        System.out.println(ejercicios.digitoIgual(23, 12));
         
     }
 
